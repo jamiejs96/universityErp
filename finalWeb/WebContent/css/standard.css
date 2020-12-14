@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+ * {
+	font-family: 'Noto Sans KR', sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+#middle {
+	width: 100%;
+	height: calc(75% - 15px);
+}

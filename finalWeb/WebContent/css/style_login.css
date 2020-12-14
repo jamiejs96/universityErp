@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;  /*border-box : 테두리를 기준으로 크기를 정함*/
+	color : #90a4ae ;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url("/image/login_page1.jpg") no-repeat center;
+	background-size: cover;
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+}
+
+.login-form {
+	position: relative;
+	z-index: 2;
+}
+
+
+.login-form h1 {
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+	text-shadow: 5px 5px 5px #ccc;
+}
+
+.radio-area {
+	width: 400px;
+	position: relative;
+	
+}
+
+.radio-area ul{
+	margin-left: 25px;
+	align-items: center;
+}
+
+.radio-area input {
+	margin-left: 50px;
+}
+
+.int-area {
+	width: 400px;
+	position: relative;
+	margin-top: 20px;
+}
+
+.int-area::first-child {
+	margin-top: 0;
+}
+
+.int-area input {
+	width: 100%;
+	padding: 20px 10px 10px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+}
+
+.int-area label {
+	color : #9e9e9e;
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	font-size: 15px;
+	transition: top .5s ease;
+}
+
+.int-area label.warning {
+	color: #ff9e80 !important;
+	-webkit-animation: warning .3s ease;
+	animation-iteration-count:3;
+}
+@-webkit-keyframes warning{
+	0% {transform: translateX(-8px); }
+	25% {transform: translateX(8px); }
+	50% {transform: translateX(-8px); }
+	75% {transform: translateX(8px); }
+}
+
+.int-area input:focus+label, .int-area input:valid+label {
+	top: 0;
+	font-size: 13px;
+	color: #00b894;
+}
+
+.btn-area {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.btn-area button {
+	width: 50%;
+	height: 50px;
+	background-color: #80bf9b;
+	color: #fff;
+	font-size: 20px;
+	border: none;
+	border-radius: 25px;
+	outline:none;
+}
+
+.caption {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.caption a {
+	font-size: 15px;
+	color: #757575;
+	text-decoration: none;
+}
+
+span {
+	font-size: 15px;
+}
+
